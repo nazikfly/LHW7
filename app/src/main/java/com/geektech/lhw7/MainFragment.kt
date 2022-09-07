@@ -45,11 +45,7 @@ class MainFragment : Fragment() {
     }
 
     private fun onClickItem(model: CharacterModel) {
-        println("212")
-        val bundle = bundleOf(
-            KEY_FOR_VALUE to model
-        )
-        findNavController().navigate(R.id.action_mainFragment_to_secondFragment, bundle)
+        findNavController().navigate(MainFragmentDirections.actionMainFragmentToSecondFragment(model))
     }
 
     companion object {

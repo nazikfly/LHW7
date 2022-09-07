@@ -20,7 +20,11 @@
         android:id="@+id/secondFragment"
         tools:layout="@layout/fragment_second"
         android:name="com.geektech.lhw7.SecondFragment"
-        android:label="SecondFragment" />
+        android:label="SecondFragment" >
+        <argument
+            android:name="model"
+            app:argType="com.geektech.lhw7.CharacterModel" />
+    </fragment>
 
 
 </navigation>
